@@ -1,7 +1,7 @@
-version: '3'
+version: "3"
 services:
   web:
-    build: 
+    build:
       context: .
       dockerfile: Dockerfile.dev
     ports:
@@ -10,7 +10,7 @@ services:
       - /app/node_modules
       - .:/app
   tests:
-    build: 
+    build:
       context: .
       dockerfile: Dockerfile.dev
     volumes:
